@@ -1,6 +1,6 @@
 # Cplusplus
 
-Here are some basic to advance implemtations of Algorithms and Data Structures for future reference
+Here are some basic to advance implementations of Algorithms and Data Structures for future reference.
 -
 -Single files can execute without any additional files.
 
