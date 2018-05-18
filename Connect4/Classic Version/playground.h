@@ -315,7 +315,7 @@ public:
             }
             else
             {
-                cout << "Sorry dude, better luck next time!" << endl;
+                cout << "Sorry, better luck next time!" << endl;
             }
         }
     }
