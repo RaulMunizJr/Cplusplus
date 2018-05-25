@@ -4,7 +4,7 @@ Here are some basic to advance implementations of Algorithms and Data Structures
 -
 -Single files can execute without any additional files.
 
--Files in folders execute with assitance from the others within the files.
+-Files in folders execute with assitance from the others within the folder.
 
 -Additonal details of what the files focus on is explained within them.
 
