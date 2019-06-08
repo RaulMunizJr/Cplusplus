@@ -354,4 +354,30 @@ int main() {
   MyFile.close();
 }
 //If doesn't exsits, created!
+
+File Opening Modes:
+ios::app - append to end of file
+ios::ate - go to end of file on opening
+ios::binary - file open in binary mode
+ios::in - open file for reading only
+ios::out - open file for writing only
+ios::trunc - delete the contents of the file if it exists
+
+ofstream outfile;
+outfile.open("file.dat", ios::out | ios::trunc ); // combined with bitwise operator (|) OR (is possible)
+```
+Read only
+```
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main () {
+  string line;
+  ifstream MyFile("test.txt");
+  while ( getline (MyFile, line) ) {
+   cout << line << '\n';
+  }
+  MyFile.close();
+}
 ```
