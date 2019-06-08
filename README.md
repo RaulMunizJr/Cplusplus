@@ -59,6 +59,7 @@ sizeof (data type)
 --------------Loops---------------:
 
 "Enhanced for loop" aka "for each"
+```
 for ( auto foo : bar )
 {
   // something
@@ -67,10 +68,11 @@ for ( auto foo : bar )
 for (auto p = c.begin(); p != c.end(); p++) {
 // do something with *p
 }
-
+```
 *Object oriented programming: identity, attributes, behavior.
 
 --------------Encapsulation---------------:
+
 "The packing of data and methods into a single component."
 'In object orientation, encapsulation means more than simply combining attributes and behavior together within a class; it also means restricting access to the inner workings of that class.'
 
