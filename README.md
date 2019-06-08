@@ -350,7 +350,8 @@ int main() {
   ofstream MyFile;
   MyFile.open("test.txt");
 
-  MyFile << "Some text. \n";
+  MyFile << "Some text! \n";
+  MyFile.close();
 }
 //If doesn't exsits, created!
 ```
