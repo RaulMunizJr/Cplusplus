@@ -276,7 +276,7 @@ Monster!
 "A function or method whose behavior can be overridden within an inheriting class by a function with the same signature"
 
 ```
-emplate <class T>
+template <class T>
 class Pair {
  private:
   T first, second;
