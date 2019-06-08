@@ -39,7 +39,7 @@ x = *p + 4;
 The stack: All of your local variables take up memory from the stack.
 
 *The heap: Unused program memory that can be used when the program runs to dynamically allocate the memory.
-
+```
 new int;
 
 int *p = new int; // request memory
@@ -52,7 +52,7 @@ delete p; // free up the memory
 int *p = NULL; // Pointer initialized with null
 p = new int[20]; // Request memory
 delete [] p; // Delete array pointed to by p
-
+```
 The sizeof operator can be used to get a variable or data type's size, in bytes.
 sizeof (data type)
 
