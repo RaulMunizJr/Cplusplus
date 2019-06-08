@@ -310,3 +310,24 @@ if (sonAge > motherAge) {
 ```
 The code looks at sonAge and motherAge, and throws an exception if sonAge is found to be the greater of the two.
 In the throw statement, the operand determines a type for the exception. This can be any expression. The type of the expression's result will determine the type of the exception thrown.
+
+
+A try block identifies a block of code that will activate specific exceptions. It's followed by one or more catch blocks. The catch keyword represents a block of code that executes when a particular exception is thrown. 
+Code that could generate an exception is surrounded with the try/catch block.
+You can specify what type of exception you want to catch by the exception declaration that appears in parentheses following the keyword catch.
+```
+try {
+  int motherAge = 29;
+  int sonAge = 36;
+  if (sonAge > motherAge) {
+   throw 99;
+  }
+} 
+catch (int x) {
+  cout<<"Wrong age values - Error "<<x;
+}
+
+//Outputs "Wrong age values - Error 99"
+```
+The try block throws the exception, and the catch block then handles it.
+The error code 99, which is an integer, appears in the throw statement, so it results in an exception of type int.
