@@ -3,7 +3,7 @@
 Useful References:
 
 --------------Arrays---------------:
-
+```
 int a[5];
 int b[5] = {11, 45, 62, 70, 88};
 
@@ -12,9 +12,9 @@ int x[3][4];
 
 
 int[ ][ ] sample = { {1, 2, 3}, {4, 5, 6} }; 
-
+```
 --------------Pointers---------------:
-
+```
 int var = 50;
 int  *p;
 p = &var;
@@ -33,7 +33,7 @@ Dereferencing:
 x = x + 4;
 x = *p + 4;
 *p = *p + 4;
-
+```
 --------------Dynamic Memory---------------:
 
 The stack: All of your local variables take up memory from the stack.
@@ -86,7 +86,7 @@ In summary the benefits of encapsulation are:
 - Control the way data is accessed or modified.
 - Code is more flexible and easy to change with new requirements.
 - Change one part of code without affecting other part of code.
-
+```
 #include <iostream>
 #include <string>
 using namespace std;
@@ -112,11 +112,13 @@ int main() {
 }
 
 //Outputs "John"
+```
 
 --------------Operator Overloading---------------:
+
 "When methods have the same name, but different parameters, it is known as method overloading.
 This can be very useful when you need the same method functionality for different types of parameters.
-
+```
 class MyClass {
  public:
   int var;
@@ -139,10 +141,13 @@ int main() {
 }
 
 //Outputs 67
+```
+
 --------------Inheritance-----------
+
 "Inheritance allows us to define a class based on another class. This facilitates greater ease in creating and maintaining an application." 
 'The class whose properties are inherited by another class is called the Base class. The class which inherits the properties is called the Derived class.'
-
+```
 #include <iostream>
 using namespace std;
 
@@ -166,11 +171,14 @@ int main() {
   d.sayHi();
 }
 //Outputs "Hi"
+```
+
 --------------Polymorphism---------------:
+
 "A call to a member function will cause a different function to be executed depending on the type of object that invokes the function."
 'C++ polymorphism means that a call to a member function will cause a different implementation to be executed depending on the type of object that invokes the function.'
 Simply, polymorphism means that a single function can have a number of different implementations.
-
+```
 class Enemy {
  protected: 
   int attackPower;
@@ -222,10 +230,12 @@ int main() {
 Ninja! - 20
 Monster! - 80
 */
+```
 --------------Virtual Functions---------------:
+
 "A function or method whose behavior can be overridden within an inheriting class by a function with the same signature"
 
-
+```
 class Enemy {
  public:
   virtual void attack() {
@@ -260,3 +270,4 @@ int main() {
 Ninja!
 Monster!
 */
+```
