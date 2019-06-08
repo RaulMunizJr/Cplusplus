@@ -271,3 +271,28 @@ Ninja!
 Monster!
 */
 ```
+--------------Class Templates---------------:
+
+"A function or method whose behavior can be overridden within an inheriting class by a function with the same signature"
+
+```
+emplate <class T>
+class Pair {
+ private:
+  T first, second;
+ public:
+  Pair (T a, T b):
+   first(a), second(b){
+  }
+  T bigger();
+};
+
+template <class T>
+T Pair<T>::bigger() {
+  return (first>second ? first : second);
+}
+
+Pair <int> obj(11, 22);
+cout << obj.bigger();
+// Outputs 22
+```
