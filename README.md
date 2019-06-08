@@ -331,3 +331,26 @@ catch (int x) {
 ```
 The try block throws the exception, and the catch block then handles it.
 The error code 99, which is an integer, appears in the throw statement, so it results in an exception of type int.
+
+--------------Working with Files---------------:
+
+
+ ofstream: Output file stream that creates and writes information to files.
+ 
+ifstream: Input file stream that reads information from files.
+
+fstream: General file stream, with both ofstream and ifstream capabilities that allow it to create, read, and write information to files.
+
+```
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+  ofstream MyFile;
+  MyFile.open("test.txt");
+
+  MyFile << "Some text. \n";
+}
+//If doesn't exsits, created!
+```
