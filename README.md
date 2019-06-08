@@ -296,3 +296,17 @@ Pair <int> obj(11, 22);
 cout << obj.bigger();
 // Outputs 22
 ```
+--------------Throwing Exceptions---------------:
+
+"C++ exception handling is built upon three keywords: try, catch, and throw.
+throw is used to throw an exception when a problem shows up."
+
+```
+int motherAge = 29;
+int sonAge = 36;
+if (sonAge > motherAge) {
+  throw "Wrong age values";
+}
+```
+The code looks at sonAge and motherAge, and throws an exception if sonAge is found to be the greater of the two.
+In the throw statement, the operand determines a type for the exception. This can be any expression. The type of the expression's result will determine the type of the exception thrown.
