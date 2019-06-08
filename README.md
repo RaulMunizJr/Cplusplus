@@ -37,6 +37,7 @@ x = *p + 4;
 --------------Dynamic Memory---------------:
 
 The stack: All of your local variables take up memory from the stack.
+
 *The heap: Unused program memory that can be used when the program runs to dynamically allocate the memory.
 
 new int;
